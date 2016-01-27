@@ -8,8 +8,8 @@ const PORT = 8080;
 // App
 const app = express();
 
-app.get('/', function (req, res) {
-  res.send('<h1>Hello world</h1>');
+app.get('/', function (request, response) {
+  response.send('<h1>Hello world</h1>');
 });
 
 app.listen(PORT);
