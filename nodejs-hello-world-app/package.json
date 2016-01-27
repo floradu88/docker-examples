@@ -1,0 +1,13 @@
+{
+  "name": "nodejs-hello-world-app",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "Radu Florescu <github.com/floradu88>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node hello-world-express.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
