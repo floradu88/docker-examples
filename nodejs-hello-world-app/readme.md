@@ -16,3 +16,4 @@
 
 * docker ps -> find out which docker containers are Running
 * docker kill XXXXX -> kill a container by its id
+* For more information visit: https://docs.docker.com/v1.8/reference/commandline/cli/
