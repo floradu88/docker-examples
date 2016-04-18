@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Docker Surprize - Presentation</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# Docker Surprize
+
+## by Radu Florescu
+
+---
+
+# Agenda
+
+1. Introduction
+2. Create a nodejs simple hello world application
+3. Create a new machine
+4. Deploy a simple hello-world using node container
+5. Deploy a simple hello-world aspnet-vnext container
+5. More information
+
+---
+
+# Introduction
+* tools: Kitematic and CLI
+* support for Hyper-v
+
+---
+
+# Setup your machine
+
+* Visit this link: https://docs.docker.com/windows/
+* https://docs.docker.com/windows/step_one/
+* Install docker toolbox
+* make sure that your installation was successful
+
+---
+
+# Create a simple nodejs hello-world
+
+* Code Demo
+
+## Commands:
+* Build you docker command
+`docker build -t nodejs-hello-world-app .`
+* Run docker container
+`docker run -it --rm --name nodejs-hello-world-app nodejs-hello-world-app`
+* Test changes
+* create repository on docker hub
+* Push it to docker
+
+---
+
+# Create a simple asp.net vnext hello-world
+
+* Code Demo
+
+## Commands:
+* Build you docker command
+`docker build -t aspnetmvc-coreclr-app .`
+* Run docker container
+`docker run -it --rm --name aspnetmvc-coreclr-app aspnetmvc-coreclr-app`
+* Test changes
+* create repository on docker hub
+* Push it to docker
+
+---
+
+# Pushing to docker
+Commands: 
+* `Docker login -username=`
+* `docker images` to list images
+* `docker push <image-hash-id>`
+
+---
+
+# Test your changes
+
+* Redirect ports and see changes you did in the running container
+
+---
+
+# Clean up
+
+* kill your container
+* see what other containers you have
+
+---
+
+# Useful docker commands
+
+* docker build
+* docker run
+* docker progress
+* docker ps
+* For more information visit: https://docs.docker.com/v1.8/reference/commandline/cli/
+
+---
+
+# Q&A?!
+
+---
+
+# Thank you!
+
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
